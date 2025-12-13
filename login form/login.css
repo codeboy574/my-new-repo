@@ -1,0 +1,141 @@
+body{
+    background: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ob{
+    border: 1px solid darkorange;
+    padding: 15px 25px;
+    border-radius: 15px;
+    background: rgba(0 , 0 , 0 , 0.4);
+    backdrop-filter: blur(7px);
+    color: white;
+    box-shadow: 0px 0px 10px darkorange , 0px 0px 10px darkorange;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.input_group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    text-shadow: 0px 0px 10px white;
+    transition: all 0.3s ease-in-out; 
+    line-height: 22px;
+}
+
+.input_group label{
+    display: flex;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.input_group button{
+    margin-top: 18px;
+}
+
+.input_group h1{
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input_group label{
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.input_group input{
+    background: transparent;
+    width: 230px;
+    height: 35px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding-left: 8px;
+    border: 1px outset wheat;
+    color: aliceblue;
+    box-shadow: 0px 0px 10px wheat;
+    text-shadow: 0px 0px 5px white;
+    transition: all 0.3s ease-in-out;
+}
+
+.input_group input::placeholder{
+    color: whitesmoke;
+}
+
+.input_group input:focus{
+    outline: none;
+}
+
+input::-webkit-outer-spin-button ,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input_group button{
+    margin-top: 30px;
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 7px 18px;
+    background: transparent;
+    color: white;
+    box-shadow: 0px 0px 10px;
+    text-shadow: 0px 0px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+
+}
+
+.input_group:hover input{
+    border: 1px solid orange;
+    box-shadow: 0px 0px 10px orange;
+    transform: translateY(-5px);
+}
+
+.input_group:hover label{
+    color: wheat;
+    text-shadow: 0px 0px 10px wheat;
+    transform: translateY(-5px);
+
+}
+
+.input_group:hover h1{
+    text-shadow: 0px 0px 20px white;
+    transform: scale(1.03);
+}
+
+.input_group:hover button{
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px white;
+    text-shadow: 0px 0px 18px white;
+    transform: translateY(-5px);
+}
+
+.ob:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 20px darkorange , 0px 0px 20px darkorange;
+}
+
+.input_group:active button{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 20px transparent;
+}
