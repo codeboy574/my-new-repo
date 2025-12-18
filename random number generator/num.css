@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    background: linear-gradient(140deg , plum , lightblue);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cont{
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid orange;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px 25px;
+    gap: 15px;
+    background: linear-gradient(130deg , plum , plum , pink , pink);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px orange,
+                0px 0px 5px orange;
+}
+
+h2{
+    text-shadow: 0px 0px 3px,
+                 0px 0px 3px;
+    transition: all 0.3s ease-in-out;                             
+}
+
+#btn{
+    outline: none;
+    border: 1px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    background: transparent;
+    color: whitesmoke;
+    text-shadow: 0px 0px 3px,
+                 0px 0px 3px;
+    box-shadow: 0px 0px 5px,
+                0px 0px 5px;
+    padding: 4px 10px;
+    transition: all 0.3s ease-in-out;                         
+}
+
+#op{
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: fit-content;
+    text-align: center;
+    margin-top: 25px;
+    text-shadow: 0px 0px 3px,
+                 0px 0px 3px;
+    box-shadow: 0px 0px 5px,
+                0px 0px 5px;
+    transition: all 0.3s ease-in-out;            
+}
+
+.cont:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 15px orange,
+                0px 0px 15px orange;
+}
+
+h2:hover{
+    text-shadow: 0px 0px 8px,
+                 0px 0px 8px;
+                 
+}
+
+#op:hover{
+    transform: translateY(-4px);
+    text-shadow: 0px 0px 8px,
+                 0px 0px 8px;
+    box-shadow: 0px 0px 15px,
+                0px 0px 15px;
+}
+
+#btn:hover{
+    transform: scale(1.05);
+    text-shadow: 0px 0px 8px,
+                 0px 0px 8px;
+    box-shadow: 0px 0px 10px,
+                0px 0px 10px;
+}
+
+#btn:active{
+    transform: scale(0.95);
+    text-shadow: 0px 0px 0px;
+    box-shadow: 0px 0px 0px;
+
+}
